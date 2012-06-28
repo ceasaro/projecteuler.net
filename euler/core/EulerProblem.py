@@ -1,5 +1,6 @@
 import inspect
 import datetime
+from math import sqrt
 
 __author__ = 'cvw'
 
@@ -14,7 +15,8 @@ class EulerProblem() :
                 answer = method_obj()
                 end_time_stamp = datetime.datetime.now()
                 print "   ANSWER:%s "%answer
-                print "   elapsed time=%s (microseconds)"%(end_time_stamp-start_time_stamp).microseconds
+                print "   elapsed time=%s microseconds"%(end_time_stamp-start_time_stamp).microseconds
+                print "   elapsed time=%s seconds"%(end_time_stamp-start_time_stamp).seconds
                 print ""
                 print ""
         pass
